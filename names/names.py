@@ -16,20 +16,26 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 # Replace the nested for loops below with your improvements
 
-root = BinarySearchTree(names_1[0])
+# root = BinarySearchTree(names_1[0])
 
-for name in names_1:
-    root.insert(name)
+# for name in names_1:
+#     root.insert(name)
 
-for name in names_2:
-    if root.contains(name):
-        duplicates.append(name)
-
-
+# for name in names_2:
+#     if root.contains(name):
+#         duplicates.append(name)
 
 
+# Stretch
 
+# Using Ptyhon's sets
+# a set in Python is an unordered collection with no duplicates
+# sets have a "intersection" method to return unique elements found in both sets
 
+set_1 = set(names_1)
+set_2 = set(names_2)
+
+duplicates = set_1.intersection(set_2)
 
 
 
@@ -51,4 +57,5 @@ print (f"runtime: {end_time - start_time} seconds")
 # Python has built-in tools that allow for a very efficient approach to this problem
 # What's the best time you can accomplish?  Thare are no restrictions on techniques or data
 # structures, but you may not import any additional libraries that you did not write yourself.
+
 
