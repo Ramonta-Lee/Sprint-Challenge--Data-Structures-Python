@@ -42,8 +42,11 @@ class LinkedList:
         if node is None:
             return None
         if node.get_next() ==  None:
+            # move head pointer to last node
             self.head = node
+            # set next pointer to prev node
             self.head.next_node = prev
+            # then return out recursively 
             return
         self.reverse_list(node.get_next(), node ) 
         # node gets passed in as the argument for previous

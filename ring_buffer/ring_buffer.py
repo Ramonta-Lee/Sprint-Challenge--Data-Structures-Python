@@ -21,5 +21,4 @@ class RingBuffer:
 
         def get(self):
             return self.data
-            # return self.data[self.cur:]+self.data[:self.cur]
 
