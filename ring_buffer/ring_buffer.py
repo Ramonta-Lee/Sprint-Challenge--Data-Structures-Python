@@ -1,4 +1,5 @@
 # can be completed without the Full Class. Other working solution below
+# Need to come back to better understand this ring buffer
 class RingBuffer:
     def __init__(self, capacity):
         self.capacity = capacity
